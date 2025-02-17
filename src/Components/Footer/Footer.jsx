@@ -8,17 +8,32 @@ function Footer() {
     { name: 'Datenschutzerklärung', url: '#' }
   ];
 
-  const serviceLinks = ['Jetzt Starten', 'Unsere Leistungsübersicht', 'Häufige Fragen', 'BeTailor Magazin', 'Gutschein kaufen'];
-  const companyLinks = ['Über Uns', 'Geschäftskunden', 'Affiliate-Partner werden', 'Presse', 'Jobs', 'Impressum'];
+  const serviceLinks = [
+    'Jetzt Starten',
+    'Unsere Leistungsübersicht',
+    'Häufige Fragen',
+    'BeTailor Magazin',
+    'Gutschein kaufen'
+  ];
+
+  const companyLinks = [
+    'Über Uns',
+    'Geschäftskunden',
+    'Affiliate-Partner werden',
+    'Presse',
+    'Jobs',
+    'Impressum'
+  ];
+
 
 
   return (
     <>
-    {/* <footer className={styles.footer}>
-      <div className={styles.footerContent}>
+    <footer className={styles.mainFooter}>
+       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h3>SERVICE</h3>
-          <div className={styles.linksContainer}>
+          <div className={styles.linksList}>
             {serviceLinks.map((link, index) => (
               <a key={index} href="#">{link}</a>
             ))}
@@ -27,7 +42,7 @@ function Footer() {
 
         <div className={styles.footerSection}>
           <h3>UNTERNEHMEN</h3>
-          <div className={styles.linksContainer}>
+          <div className={styles.linksList}>
             {companyLinks.map((link, index) => (
               <a key={index} href="#">{link}</a>
             ))}
@@ -38,23 +53,22 @@ function Footer() {
           <h3>ZAHLUNGSMÖGLICHKEITEN</h3>
           <div className={styles.paymentMethods}>
             <img 
-              src="https://dashboard.codeparrot.ai/api/image/Z7CUd-epongUSRm4/rectangl.png" 
+              src="https://dashboard.codeparrot.ai/api/image/Z7Ne16WN819FoZh0/rectangl.png" 
               alt="Payment Methods"
-              width="197"
-              height="151"
+              className={styles.paymentImage}
             />
           </div>
         </div>
 
         <div className={styles.footerSection}>
           <h3>BEWERTUNGEN</h3>
-          <p>TRUSTPILOT</p>
+          <p className={styles.trustpilot}>TRUSTPILOT</p>
           <div className={styles.reviews}>
             [reviews_rating icon="no" count="hide" vicinity="hide" name="hide" link="reviews"]
           </div>
         </div>
       </div>
-    </footer> */}
+    </footer> 
 
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
